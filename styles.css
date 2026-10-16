@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Google Sans Flex";
+  font-size: clamp(2rem, 4vw, 6rem);
+  font-weight: 600;
+  letter-spacing: -2%;
+  line-height: 1.25;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero {
+  height: 125svh;
+}
+
+.hero-img {
+  position: relative;
+  width: 40%;
+  aspect-ratio: 5/7;
+}
+
+.hero-img img {
+  opacity: 0;
+}
+
+.hero-canvas {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  display: block;
+  pointer-events: none;
+}
+
+.about {
+  height: 100svh;
+}
+
+.about-header {
+  width: 65%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100svh;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .about-header {
+    width: 85%;
+  }
+}
